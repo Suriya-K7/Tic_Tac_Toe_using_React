@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="result">{status}</div>
+      <div className={winner ? "result win" : "result"}>{status}</div>
       <div className="row">
         <Button value={square[0]} onClick={() => handleClick(0)} />
         <Button value={square[1]} onClick={() => handleClick(1)} />
